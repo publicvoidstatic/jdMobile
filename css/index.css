@@ -1,0 +1,296 @@
+/*基于百分比页面的流式布局*/
+.jd-container{
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	height: 1000px;
+	/*background-color: pink;*/
+	margin: 0 auto;
+}
+body{
+	background-color: #f5f5f5;
+}
+.jd-search{
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	/*position: relative;*/
+	z-index: 100;
+}
+.jd-search-box{
+	width: 100%;
+	height: 40px;
+	min-width: 320px;
+	max-width: 640px;
+	background-color: rgba(201,21,35,0.85);
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.jd-search-box .jd-logo{
+	position: absolute;
+	left:7px;
+	top: 4px;
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	background: url(../images/sprites.png) no-repeat 0 -103px /200px 200px;
+}
+.jd-search-box .jd-login{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+
+}
+.jd-search-box form{
+	padding-left: 70px;
+	padding-right: 50px;
+	position: relative;
+}
+
+.jd-search-box form .icon-search{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(../images/sprites.png) no-repeat -60px -110px /200px 200px;
+	left: 75px;
+	top: 10px;
+
+}
+
+.jd-search-box input{
+	margin-top: 5px;
+	width: 100%;
+	height: 30px;
+	border-radius:15px;
+	padding-left: 25px;
+	font-size: 16px;
+}
+
+/*轮播图*/
+.jd-banner{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.jd-banner ul:first-child{
+	width: 1000%;
+	transform: translateX(-10%);
+
+}
+
+.jd-banner ul:first-child li{
+	width: 10%;
+	float: left;
+}
+
+.jd-banner ul:first-child li a{
+	display: block;
+	width: 100%;
+}
+
+.jd-banner ul:first-child li a img{
+	display: block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.jd-banner ul:last-child{
+	position:absolute;
+	left: 50%;
+	bottom: 5px;
+	margin-left:-59px;
+	width: 118px;
+	height: 6px; 
+}
+
+.jd-banner ul:last-child li{
+	width: 6px;
+	height: 6px;
+	margin-left: 10px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	float: left;
+}
+
+.jd-banner ul:last-child li:first-child{
+	margin-left: 0;
+}
+
+.jd-banner ul:last-child .now{
+	background-color: #fff;
+}
+
+/*导航栏部分*/
+.jd-nav{
+	/*margin-top: 20px;*/
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+}
+
+.jd-nav ul{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.jd-nav ul li{
+	width: 25%;
+	float: left;
+}
+
+.jd-nav ul li a{
+	display: block;
+	width: 100%;
+}
+
+.jd-nav ul li a img{
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.jd-nav ul li a p{
+	text-align: center;
+	color: #666;
+	padding: 5px 0;
+}
+
+
+/*产品区域*/
+.jd-product{
+	padding: 0 5px;
+}
+
+.jd-product-box{
+	padding: 10px 0;
+	margin-top: 10px;
+	/*min-height: 200px;*/
+	box-shadow: 0 0 2px #ccc;
+	background-color: #fff;
+}	
+
+.jd-product-box .tit{
+	height: 34px;
+	line-height: 34px;
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+}
+
+.jd-product-box .tit.nb{
+	border-bottom: none;
+}
+
+.jd-product-box .tit h3{
+	font-weight: normal;
+	position: relative;
+	padding-left: 20px;
+}
+
+.jd-product-box .tit h3::before{
+	content: "";
+	width: 2px;
+	height: 16px;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	background-color: red;
+}
+.sk .icon{
+	width: 16px;
+	height: 20px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 9px;
+	background: url(../images/naozhong.png) no-repeat center / 16px 20px;
+}
+.sk .name{
+	font-size: 14px;
+	color: red;
+	float: left;
+	margin-left: 10px;
+}
+.sk .time{
+	margin-left: 10px;
+	float: left;
+}
+
+.sk .time span{
+	float: left;
+	width:16px;
+	height:16px;
+	color: #fff;
+	text-align: center;
+	line-height: 16px;
+	background: black;
+	margin-left: 3px;
+	margin-top: 7px;
+}
+.sk .time span:nth-child(3n){
+	background-color: #fff;
+	color: #333;
+}
+
+.sk .con .pro{
+	width: 100%;
+}
+
+.sk .con .pro li{
+
+	float: left;
+	width: 33.33%;
+	
+
+}
+.sk .con .pro li:last-child a{
+	border-right: none;
+}
+.sk .con .pro li a{
+	display: block;
+	border-right: 1px solid #ddd;	
+}
+.sk .con .pro li a img{
+	margin: 0 auto;
+	display: block;
+	width: 64%;
+}
+.sk .con .pro li p{
+	text-align: center;
+	margin-top: 5px;
+}
+.sk .con .pro li .nowprice{
+	color: #d8505c;
+}
+.sk .con .pro li  .oldprice{
+	text-decoration: line-through;
+}
+
+/*组合样式的使用*/
+.w-50p{
+	width: 50%;
+}
+.w-50p img{
+	display: block;
+	width: 100%;
+}
+.bl{
+	border-left: 1px solid #ddd;
+}
+.br{
+	border-right: 1px solid #ddd;
+}
+.bb{
+	border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,71 @@
+/*reset css*/
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	/*点击高亮颜色清除*/
+	-webkit-tap-hightlight-color:transparent;
+
+}
+
+body{
+	font-size: 14px;
+	font-family: 'Microsoft',sans-serif;
+	color: #333;
+}
+
+ul,ol{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+input,textarea{
+	outline: none;
+	border: none;
+	/*不允许改变尺寸*/
+	resize: none;
+	-webkit-appearance:none;
+	appearance:none;
+}
+
+/*common css*/
+.f-left{
+	float: left;
+}
+
+.f-right{
+	float: right;
+}
+
+/*清除浮动带来的影响*/
+.clearfix::before,
+.clearfix:after{
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+
+.m-l10{
+	margin-left: 10px;
+}
+.m-r10{
+	margin-right: 10px;
+}
+.m-t10{
+	margin-top: 10px;
+}
+.m-b10{
+	margin-bottom: 10px;
+}
+
